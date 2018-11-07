@@ -23,10 +23,10 @@ class MainActivity : AppCompatActivity() {
     @OnClick(R.id.button)
     fun onButtonClick() {
         val text = editText.text.toString()
-//        if (text.equals("42")) {
+        if (text.equals("42")) {
             throw Exception("We found the answer!")
-//        } else {
-//            Toast.makeText(this, "¿\"" + text + "\"?", Toast.LENGTH_SHORT).show();
-//        }
+        } else {
+            Toast.makeText(this, "¿\"" + text + "\"?", Toast.LENGTH_SHORT).show();
+        }
     }
 }
